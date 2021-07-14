@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API ML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="./index.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-content">
+        <form class="search-form">
+          <input
+            type="text"
+            class="search-input"
+            name="buscar"
+            placeholder="¿Que estás buscando?"
+          />
+          <button class="search-button">Buscar</button>
+        </form>
+      </div>
+    </header>
+    <!-- CONTENT -->
+    <div class="content">
+      <h3 class="results-word">
+        Resultado: <span class="result-count"></span>
+      </h3>
+      <div class="results"></div>
+    </div>
+
+    <!-- TEMPLATE -->
+    <template id="result-item-template">
+      <div class="result-item">
+        <img
+          class="result-item-img"
+          src="https://picsum.photos/id/237/200/300"
+          alt=""
+        />
+        <div class="result-item-content">
+          <h4 class="result-item-title">titulo</h4>
+          <p class="result-item-condition">nuevo</p>
+          <p class="result-item-sell-count">
+            Vendidos: <span class="result-item-sell-count-number">14</span>
+          </p>
+        </div>
+        <div class="result-item-price">$14000</div>
+      </div></template
+    >
+  </body>
+</html>
